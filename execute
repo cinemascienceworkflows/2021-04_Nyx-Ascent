@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source bootstrap.env
+source pantheon/env.sh
+
+./sbang.sh setup/install-deps.sh
+./sbang.sh run/run.sh
+./sbang.sh run/wait_for_completion.sh
+./sbang.sh postprocess/postprocess.sh
+./sbang.sh postprocess/wait_for_completion.sh
+./sbang.sh validate/validate.sh

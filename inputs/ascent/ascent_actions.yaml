@@ -1,0 +1,32 @@
+-
+  action: add_pipelines
+  pipelines:
+    pipe1:
+      f1:
+        params:
+          field: "particle_mass_density"
+          clamp_min_value: "0.001"
+          output_name: "log_Density"
+        type: "log"
+      f2:
+        params:
+          field: "particle_mass_density"
+          sample_rate: "0.1"
+          bins: "32"
+        type: "histsampling"
+-
+  action: "add_scenes"
+  scenes:
+    scene1:
+      plots:
+        plt1:
+          type: "pseudocolor"
+          pipeline: "pipe1"
+          field: "log_Density"
+      renders:
+        r1:
+          type: "cinema"
+          phi: 10
+          theta: 4
+          db_name: "pantheon.cdb"
+
