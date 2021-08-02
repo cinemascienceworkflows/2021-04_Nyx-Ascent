@@ -69,9 +69,6 @@ if $INSTALL_ASCENT; then
     # copy spack settings
     cp inputs/spack/spack.yaml $PANTHEON_WORKFLOW_DIR
 
-    # copy custom spack packages for our needs
-    cp -r inputs/spack/pantheon $PANTHEON_WORKFLOW_DIR/spack/var/spack/repos/pantheon
-
     pushd $PANTHEON_WORKFLOW_DIR
 
     # activate spack and install Ascent
