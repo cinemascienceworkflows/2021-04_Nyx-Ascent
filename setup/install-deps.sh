@@ -78,8 +78,7 @@ if $INSTALL_ASCENT; then
     . spack/share/spack/setup-env.sh
     spack -e . concretize -f 2>&1 | tee concretize.log
     spack mirror add e4s_summit https://cache.e4s.io
-    wget https://oaciss.uoregon.edu/e4s/e4s.pub
-    spack gpg trust e4s.pub
+    spack buildcache keys -it
     module load patchelf
 
     if $USE_SPACK_CACHE; then
