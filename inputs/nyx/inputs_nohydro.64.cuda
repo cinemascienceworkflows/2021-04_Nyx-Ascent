@@ -117,8 +117,8 @@ nyx.lo_bc       =  0   0   0
 nyx.hi_bc       =  0   0   0
 
 # WHICH PHYSICS
-nyx.do_hydro = 0
-nyx.do_grav  = 1
+nyx.do_hydro = 1
+nyx.do_grav  = 0
 
 # COMOVING 0.702 h
 nyx.comoving_OmM = 0.275
