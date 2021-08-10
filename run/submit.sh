@@ -4,7 +4,7 @@
 #BSUB -P <compute_allocation>
 #BSUB -J <pantheon_workflow_jid> 
 #BSUB -W 0:03
-#BSUB -nnodes 1
+#BSUB -nnodes 8
 #BSUB -alloc_flags "gpumps"
 #BSUB -o Nyx64_Test.%J
 #BSUB -e Nyx64_Test.%J
