@@ -1,0 +1,15 @@
+-
+  action: "add_scenes"
+  scenes:
+    scene1:
+      plots:
+        plt1:
+          type: "pseudocolor"
+          field: "particle_xvel"
+      renders:
+        r1:
+          type: "cinema"
+          phi: 10
+          theta: 4
+          db_name: "pantheon.cdb"
+
