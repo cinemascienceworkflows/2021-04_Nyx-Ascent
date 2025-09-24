@@ -1,4 +1,4 @@
-![release](https://pantheonscience.github.io/states/release.png)
+![archive](https://pantheonscience.github.io/states/archive.png)
 
 # Nyx in-situ sampling workflow
 
